@@ -1,0 +1,41 @@
+body{
+    display: grid;
+    justify-content: center;
+}
+.contenedor{
+    border: 5px solid #e1bee7;
+    background-color: #fff1ff;
+    display: grid;
+    grid-template-rows: 150px 150px 150px;
+    grid-auto-flow: column;
+    /*grid-template-rows: 150px 250px; /*se le da una altura especifica a las filas que qeuramos*/
+    width: fit-content;
+    height: 500px;
+    gap: 20px;
+    
+}
+.item{
+    border: 5px solid #f678;
+    font-size: 4rem;
+    display: grid;
+    justify-content: end;
+    align-items: end;
+    width: 150px;
+    height: 150px;
+}
+.item:nth-child(2),.item:nth-child(5){
+    background-color: yellow;
+}
+.item:nth-child(1),.item:nth-child(4){
+    background-color: green;
+}
+.item:nth-child(3),.item:nth-child(6){
+    background-color: orange;
+}
+span{
+    background-color: black;
+    color: white;
+    width: 50px;
+    display: grid;
+    justify-content: center;
+}
